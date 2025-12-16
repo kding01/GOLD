@@ -3423,6 +3423,78 @@
           <p><span style="font-family:&quot;ArialMT&quot;, &quot;Arial&quot;, sans-serif;">1</span><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">、增加代理管理功能：主要查看目前所有代理的用户；</span></p><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">2、字段说明：</span></p><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理ID：代理账号ID；自动生成</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理等级：总代和普通代理；总代为一级代理；普通代理指的是除一级代理的其他下级代理</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理属性：真实代理和试玩代理；真实代理指的是真实代理；试玩代理指的是只能是试玩代理；试玩代理下的用户只能是试玩用户，不能切换到真实用户；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理账号：代理账号；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">推荐码：代理的推荐码；系统自动生成6位随机数字+26个字母；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">上级ID：代理的上级ID；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">团队人数：代理的所有下级人数；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">直属人数：统计当前代理下的直属下级用户和直属下级代理的人数；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理后台：指的是否允许登录代理后台；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">注册时间；指的代理用户注册时间；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">操作：编辑和删除；</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">点击编辑，进入对应代理信息；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">点击删除，删除代理，需要校验对应代理是否有下级数据，如果有下级代理数据不能进行删除：</span></li></ul></ul><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">3、默认排序按照注册时间的倒序排序；</span></p><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">4、新增逻辑：</span></p><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">字段说明：</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理账号：文本输入框，必输，8-20个字符；代理的登录账号；编辑页面不允许修改</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">上级代理：文本输入框，非必输，8-20个字符；代理等级为总代的时候不需要输入上级代理；代理等级为普通代理则需要必须输入上级代理</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">登录密码：密码输入框，必输，6-20个字符；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">确认登录密码：密码输入框，必输，6-20个字符；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理属性：必输，下拉选项：真实代理和试玩代理；编辑页面不允许修改</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理等级：必输，下拉选项：总代理和普通代理；编辑页面不允许修改</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">手机号码：非必输，电话号码输入格式</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">邮箱号码：非必输，邮箱号码输入格式</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理后台登录权限：单选项，启用和未启用；启用则允许登录代理后台；未启用则不允许登录代理后台；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">试玩金额：非必输，金额输入框，20个字符；如果代理属性是试玩代理，则试玩金额为必输；</span></li></ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">逻辑说明：</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">校验代理账号唯一性；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">试玩代理邀请用户注册成功，则默认此用户是试玩代理；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">试玩代理前端权限：(不需要判断是否实名认证才可以下注)</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">各账户之间划转；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">秒合约下注；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">永续合约下注；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">跟单下注</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">交易订单查看；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">财务订单查看；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">语言切换；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">查看帮助中心；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">查看关于我们；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">编写投诉建议；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">分享邀请码；</span></li></ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">前端禁止功能：</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">充值功能；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">提现功能；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">实名认证功能；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">修改登录密码；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">修改交易密码；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">增加提币地址；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">代理中心禁止查看；如果是试玩代理可以进行查看对应代理中心，普通用户无法查看</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">余额返利；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">无法切换到真实用户</span></li></ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">后台对试玩账户操作功能：</span></li><ul><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">1、调整试玩用户账户余额；</span></li><li style=""><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">2、禁止下注操作；</span></li></ul></ul></ul><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">5、试玩代理注册的用户只能生存试玩账号；</span></p><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;">6、试玩代理不能转移到真实代理下，试玩账号也不能转移到真实代理下。</span></p><p><span style="font-family:&quot;PingFangSC-Regular&quot;, &quot;PingFang SC&quot;, sans-serif;"><br></span></p>
         </div>
       </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u2950" class="ax_default _图片">
+        <img id="u2950_img" class="img " src="images/代理管理/u2950.png"/>
+        <div id="u2950_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2951" class="ax_default label">
+        <div id="u2951_div" class=""></div>
+        <div id="u2951_text" class="text ">
+          <p><span>是否允许多设备登录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u2952" class="ax_default" selectiongroup="单选项" data-left="642" data-top="2568" data-width="114" data-height="30" layer-opacity="1">
+
+        <!-- Unnamed (圆形) -->
+        <div id="u2953" class="ax_default ellipse selected">
+          <img id="u2953_img" class="img " src="images/用户管理/u410_selected.svg"/>
+          <div id="u2953_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (圆形) -->
+        <div id="u2954" class="ax_default ellipse selected">
+          <img id="u2954_img" class="img " src="images/用户管理/u411_selected.svg"/>
+          <div id="u2954_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u2955" class="ax_default label selected">
+          <div id="u2955_div" class="selected"></div>
+          <div id="u2955_text" class="text ">
+            <p><span>是</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u2956" class="ax_default" selectiongroup="单选项" data-left="766" data-top="2568" data-width="114" data-height="30" layer-opacity="1">
+
+        <!-- Unnamed (圆形) -->
+        <div id="u2957" class="ax_default ellipse">
+          <img id="u2957_img" class="img " src="images/用户管理/u410.svg"/>
+          <div id="u2957_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (圆形) -->
+        <div id="u2958" class="ax_default ellipse">
+          <img id="u2958_img" class="img " src="images/用户管理/u411.svg"/>
+          <div id="u2958_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u2959" class="ax_default label">
+          <div id="u2959_div" class=""></div>
+          <div id="u2959_text" class="text ">
+            <p><span>否</span></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
